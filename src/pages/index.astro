@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Yoga with Anton</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js" defer></script>
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+    <main class="p-8 space-y-20">
+      <section id="about" class="max-w-3xl mx-auto text-center">
+        <h1 class="text-4xl font-bold mb-4">About Me</h1>
+        <p class="text-lg">I teach yoga classes in a calm, welcoming atmosphere. Join me to improve flexibility and peace of mind.</p>
+      </section>
+
+      <section id="courses" class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-4">Courses</h2>
+        <p class="text-md">Weekly group and private classes. All levels welcome.</p>
+      </section>
+
+      <section id="contact" class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+        <!-- Mailchimp Embed Placeholder -->
+        <!-- Calendly Embed Placeholder -->
+        <!-- PayPal/Stripe Buttons Placeholder -->
+        <p>Email me at <a href="mailto:yoga@example.com" class="text-blue-600 underline">yoga@example.com</a></p>
+      </section>
+    </main>
+
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        gsap.from('section', {
+          duration: 1,
+          y: 30,
+          opacity: 0,
+          stagger: 0.3,
+          ease: 'power2.out',
+        });
+      });
+    </script>
+  </body>
+</html>
