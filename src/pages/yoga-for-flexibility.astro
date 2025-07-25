@@ -1,0 +1,88 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <main class="bg-gradient-to-br from-green-100 via-white to-blue-100 min-h-screen font-sans">
+    <!-- Hero Section -->
+    <section class="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto py-20 px-6 gap-10">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-6 text-gray-900 leading-tight">Start Your Yoga Journey Today</h1>
+        <p class="text-xl text-gray-700 mb-8">Unlimited access to online yoga classes for all levels. Practice anytime, anywhere. Join our community and transform your body and mind!</p>
+        <a href="#signup" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-lg font-semibold shadow-lg hover:bg-blue-700 transition text-lg">Get Started Free</a>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Yoga" class="rounded-2xl shadow-2xl w-full max-w-md" />
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-white/80">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-8">Why Join Our Yoga Platform?</h2>
+        <div class="grid md:grid-cols-4 gap-8 mt-8">
+          <div>
+            <div class="text-blue-600 text-5xl mb-2">🧘‍♀️</div>
+            <h3 class="font-semibold text-lg mb-2">Expert Teachers</h3>
+            <p class="text-gray-600">Certified instructors guide you every step of the way.</p>
+          </div>
+          <div>
+            <div class="text-blue-600 text-5xl mb-2">📅</div>
+            <h3 class="font-semibold text-lg mb-2">Flexible Schedule</h3>
+            <p class="text-gray-600">Practice at your own pace, anytime you want.</p>
+          </div>
+          <div>
+            <div class="text-blue-600 text-5xl mb-2">🌍</div>
+            <h3 class="font-semibold text-lg mb-2">Global Community</h3>
+            <p class="text-gray-600">Connect with yogis from around the world.</p>
+          </div>
+          <div>
+            <div class="text-blue-600 text-5xl mb-2">💻</div>
+            <h3 class="font-semibold text-lg mb-2">Any Device</h3>
+            <p class="text-gray-600">Access classes from your phone, tablet, or computer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-blue-50">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-8">What Our Members Say</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <p class="text-gray-700 italic mb-4">“This platform changed my life! The classes are amazing and the teachers are so supportive.”</p>
+            <div class="flex items-center justify-center gap-3">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="w-12 h-12 rounded-full" />
+              <span class="font-semibold">Anna K.</span>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <p class="text-gray-700 italic mb-4">“I love the flexibility and the variety of classes. I can practice whenever I want!”</p>
+            <div class="flex items-center justify-center gap-3">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-12 h-12 rounded-full" />
+              <span class="font-semibold">Mark D.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action / Signup Section -->
+    <section id="signup" class="py-20 bg-gradient-to-r from-blue-100 to-green-100">
+      <div class="max-w-xl mx-auto px-6 text-center">
+        <h2 class="text-2xl font-bold mb-4">Try a Free Class Today</h2>
+        <form class="flex flex-col gap-4 items-center">
+          <input type="text" placeholder="Your Name" class="border border-gray-300 rounded px-4 py-2 w-full" required />
+          <input type="email" placeholder="Your Email" class="border border-gray-300 rounded px-4 py-2 w-full" required />
+          <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Start Free</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-500 text-sm">
+      &copy; 2025 Yoga Platform. All rights reserved.
+    </footer>
+  </main>
+</Layout>
